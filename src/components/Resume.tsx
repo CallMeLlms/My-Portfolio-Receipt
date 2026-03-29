@@ -71,8 +71,8 @@ export default function Resume() {
         </h1>
 
         {/* Profile Section */}
-        <div className="flex gap-6 mb-8">
-          <div className="w-40 h-40 border-2 border-black relative overflow-hidden shrink-0">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-8 items-center sm:items-start">
+          <div className="w-28 h-28 sm:w-40 sm:h-40 border-2 border-black relative overflow-hidden shrink-0">
             <img 
               src="https://picsum.photos/seed/portrait/300/300?grayscale" 
               alt="Profile" 
@@ -82,20 +82,20 @@ export default function Resume() {
             />
             <div className="absolute inset-0 dither-bg opacity-30 pointer-events-none" />
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center items-center sm:items-start text-center sm:text-left w-full">
             <SectionHeader title="PROFILE" />
-            <h2 className="text-2xl 2xl:text-3xl font-bold leading-none mb-2 uppercase">Justine Llamera</h2>
+            <h2 className="text-xl sm:text-2xl 2xl:text-3xl font-bold leading-none mb-2 uppercase">Justine Llamera</h2>
             <p 
-              className="text-[10px] 2xl:text-xs leading-tight font-bold opacity-70 cursor-pointer hover:opacity-100 transition-opacity select-none"
+              className="text-[10px] sm:text-[11px] 2xl:text-xs leading-tight font-bold opacity-70 cursor-pointer hover:opacity-100 transition-opacity select-none max-w-[32ch] sm:max-w-none"
               onClick={spawnHeart}
             >
               "I'm broke, either try hard or die not trying :((  Click this for some hearts &lt;3."
             </p>
-            <div className="mt-4 flex flex-col gap-1 text-[10px] 2xl:text-xs font-bold">
-              <a href="https://github.com/CallMeLlms" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-2">
+            <div className="mt-4 flex flex-col gap-1 text-[10px] sm:text-[11px] 2xl:text-xs font-bold max-w-full">
+              <a href="https://github.com/CallMeLlms" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-2 justify-center sm:justify-start break-all">
                 [GITHUB] github.com/CallMeLlms
               </a>
-              <a href="https://www.linkedin.com/in/justine-llamera-4107842a3/" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-2">
+              <a href="https://www.linkedin.com/in/justine-llamera-4107842a3/" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-2 justify-center sm:justify-start break-all">
                 [LINKEDIN] justine-llamera
               </a>
             </div>
