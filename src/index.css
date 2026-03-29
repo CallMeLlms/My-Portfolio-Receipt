@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DotGothic16&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-dot: "DotGothic16", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#f0f0f0] text-black font-mono selection:bg-black selection:text-white;
+    text-shadow: 1px 0 0 rgba(255,0,0,0.5), -1px 0 0 rgba(0,255,255,0.5);
+  }
+}
+
+@layer utilities {
+  .dither-bg {
+    background-image: radial-gradient(circle, #000 1px, transparent 1px);
+    background-size: 2px 2px;
+  }
+  
+  .bayer-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='1' height='1' fill='%23000' opacity='0.9'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23000' opacity='0.9'/%3E%3Crect x='2' y='0' width='1' height='1' fill='%23000' opacity='0.6'/%3E%3Crect x='0' y='2' width='1' height='1' fill='%23000' opacity='0.6'/%3E%3Crect x='1' y='1' width='1' height='1' fill='%23000' opacity='0.3'/%3E%3Crect x='3' y='3' width='1' height='1' fill='%23000' opacity='0.3'/%3E%3C/svg%3E");
+    background-size: 4px 4px;
+    background-repeat: repeat;
+  }
+
+  .bitmap-text {
+    text-shadow: 1px 1px 0px #fff;
+  }
+
+  .thermal-paper {
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: #ffffff22;
+    background-image: url('./asset/Paper_background.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    mix-blend-mode: normal;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .thermal-paper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 100% 2px;
+    pointer-events: none;
+    z-index: 10;
+  }
+}
