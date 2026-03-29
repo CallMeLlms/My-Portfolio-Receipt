@@ -52,7 +52,7 @@ export default function Resume() {
       <div className="thermal-paper w-full max-w-[800px] p-8 md:p-12 border-x border-black/5">
         {/* Header */}
         <div className="flex justify-between items-start mb-8">
-          <div className="text-[10px] font-bold">
+          <div className="text-[10px] 2xl:text-xs font-bold">
             NO. 122 <br />
             {currentDate}
           </div>
@@ -62,11 +62,11 @@ export default function Resume() {
                 <div key={i} className="w-[2px] h-4 bg-black" style={{ height: `${Math.random() * 10 + 10}px` }} />
               ))}
             </div>
-            <span className="text-[8px] font-bold">9 786175 257665</span>
+            <span className="text-[8px] 2xl:text-[10px] font-bold">9 786175 257665</span>
           </div>
         </div>
 
-        <h1 className="text-4xl font-bold tracking-tighter mb-8 leading-none border-y-2 border-black py-4 text-center">
+        <h1 className="text-4xl 2xl:text-5xl font-bold tracking-tighter mb-8 leading-none border-y-2 border-black py-4 text-center">
           PORTFOLIO
         </h1>
 
@@ -84,14 +84,14 @@ export default function Resume() {
           </div>
           <div className="flex flex-col justify-center">
             <SectionHeader title="PROFILE" />
-            <h2 className="text-2xl font-bold leading-none mb-2 uppercase">Justine Llamera</h2>
+            <h2 className="text-2xl 2xl:text-3xl font-bold leading-none mb-2 uppercase">Justine Llamera</h2>
             <p 
-              className="text-[10px] leading-tight font-bold opacity-70 cursor-pointer hover:opacity-100 transition-opacity select-none"
+              className="text-[10px] 2xl:text-xs leading-tight font-bold opacity-70 cursor-pointer hover:opacity-100 transition-opacity select-none"
               onClick={spawnHeart}
             >
               "I'm broke, either try hard or die not trying :((  Click this for some hearts &lt;3."
             </p>
-            <div className="mt-4 flex flex-col gap-1 text-[10px] font-bold">
+            <div className="mt-4 flex flex-col gap-1 text-[10px] 2xl:text-xs font-bold">
               <a href="https://github.com/CallMeLlms" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-2">
                 [GITHUB] github.com/CallMeLlms
               </a>
@@ -108,7 +108,7 @@ export default function Resume() {
         <div className="mb-8">
           <SectionHeader title="WORK EXPERIENCE" />
           <div className="flex flex-col items-center justify-center py-4 opacity-60">
-            <pre className="font-mono text-[10px] leading-tight text-center">
+            <pre className="font-mono text-[10px] 2xl:text-xs leading-tight text-center">
 {`  .-""""-.
  /  o  o  \\
 |          |
@@ -116,7 +116,7 @@ export default function Resume() {
  \\        /
   \`"----"\``}
             </pre>
-            <p className="mt-4 text-[10px] font-bold uppercase tracking-widest">No Data Found</p>
+            <p className="mt-4 text-[10px] 2xl:text-xs font-bold uppercase tracking-widest">No Data Found</p>
           </div>
         </div>
 
@@ -129,11 +129,11 @@ export default function Resume() {
             <div>
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="font-bold uppercase text-sm">MoodLearning Inc. (Student Intern)</h3>
-                <span className="text-[10px] font-bold shrink-0 text-right">OCT 2025 - APR 2026<br/>(500 HRS)</span>
+                <span className="text-[10px] 2xl:text-xs font-bold shrink-0 text-right">OCT 2025 - APR 2026<br/>(500 HRS)</span>
               </div>
-              <div className="text-[10px] font-bold mb-2 opacity-90">Front-end and backend development</div>
-              <div className="text-[10px] font-bold mb-1 opacity-80">NHWR (National Health Workforce Registry) – Feature Dev & Optimization:</div>
-              <ul className="text-[10px] leading-tight opacity-80 space-y-1">
+              <div className="text-[10px] 2xl:text-xs font-bold mb-2 opacity-90">Front-end and backend development</div>
+              <div className="text-[10px] 2xl:text-xs font-bold mb-1 opacity-80">NHWR (National Health Workforce Registry) – Feature Dev & Optimization:</div>
+              <ul className="text-[10px] 2xl:text-xs leading-tight opacity-80 space-y-1">
                 <li className="flex gap-2"><span className="shrink-0">-</span><span>Developed role-based access impersonation to enable secure delegation of account authority.</span></li>
                 <li className="flex gap-2"><span className="shrink-0">-</span><span>Optimized dashboard performance through efficient data queries, caching layers, and indexing for large-scale visualizations.</span></li>
                 <li className="flex gap-2"><span className="shrink-0">-</span><span>Implemented facility admin conflict resolution workflow:</span></li>
@@ -197,7 +197,7 @@ export default function Resume() {
         {/* Skills */}
         <div className="mb-8">
           <SectionHeader title="SKILLS" />
-          <div className="space-y-2 text-xs leading-tight">
+          <div className="space-y-2 text-xs 2xl:text-sm leading-tight">
             <div className="flex gap-4">
               <span className="font-bold uppercase w-[180px] shrink-0">Languages:</span>
               <span className="opacity-80">Python, SQL, JavaScript, TypeScript, Java, HTML, CSS</span>
@@ -225,7 +225,7 @@ export default function Resume() {
 
         {/* Footer */}
         <div className="text-center">
-          <div className="text-sm font-bold mb-4 uppercase tracking-widest">
+          <div className="text-sm 2xl:text-base font-bold mb-4 uppercase tracking-widest">
             [TOTAL PROJECTS: 02]
           </div>
           
@@ -236,22 +236,11 @@ export default function Resume() {
             <div className="flex-1 border-b border-dashed border-black h-2" />
           </div>
           
-          <div className="mt-4 text-[8px] font-bold opacity-40 uppercase">
+          <div className="mt-4 text-[8px] 2xl:text-[10px] font-bold opacity-40 uppercase">
             Thank you for your visit // Serial: 0x8823-FF21
           </div>
         </div>
       </div>
-
-      {/* Floating Scroll Hint */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.3 }}
-        transition={{ delay: 1 }}
-        className="fixed bottom-8 right-8 flex flex-col items-center gap-2 hover:opacity-100 transition-opacity cursor-default"
-      >
-        <span className="text-[10px] font-bold uppercase vertical-text" style={{ writingMode: 'vertical-rl' }}>Scroll to print</span>
-        <ArrowDown size={16} />
-      </motion.div>
     </>
   );
 }

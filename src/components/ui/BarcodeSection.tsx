@@ -14,6 +14,6 @@ export const BarcodeSection = ({ value, label }: { value: string; label?: string
         );
       })}
     </div>
-    {label && <span className="text-[10px] mt-1 tracking-[0.3em] font-bold uppercase">{label}</span>}
+    {label && <span className="text-[10px] 2xl:text-xs mt-1 tracking-[0.3em] font-bold uppercase">{label}</span>}
   </div>
 );
